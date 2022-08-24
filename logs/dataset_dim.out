@@ -1,0 +1,4 @@
+job started ....
+LibriSpeech: 1, train_ds: 1
+inp_shape: torch.Size([1, 66, 4, 256, 1251]), inp_dtype: torch.float32, tgt_shape: torch.Size([1, 66, 104, 512]), tgt_dtype: torch.float32, doA: torch.Size([1, 104, 2]), doA_dtype: torch.float32
+job finished!

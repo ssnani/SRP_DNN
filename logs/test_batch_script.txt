@@ -1,0 +1,12 @@
+#!/bin/sh
+#SBATCH --job-name=SRPDNN
+#SBATCH --nodes=1 --ntasks-per-node=8 --gpus=1
+#SBATCH --constraint=48core
+#SBATCH --mem=64gb
+#SBATCH --time=00:20:00
+#SBATCH --account=PAS0774
+echo "job started ...."
+cd /users/PAS1937/battula12/Shanmukh/Projects/MVTSS/Baselines/SRPDNN_bkp_test
+./run.sh
+#python -u mv_dataset.py
+echo "job finished!"

@@ -1,0 +1,11 @@
+#!/bin/sh
+#SBATCH --job-name=SRPDNN
+#SBATCH --nodes=1 --ntasks-per-node=8 --gpus=1
+#SBATCH --constraint=48core
+#SBATCH --mem=64gb
+#SBATCH --time=4:00:00
+#SBATCH --account=PAS0774
+echo "job started ...."
+cd /users/PAS1937/battula12/Shanmukh/Projects/MVTSS/Baselines/SRPDNN
+./run.sh
+echo "job finished!"
